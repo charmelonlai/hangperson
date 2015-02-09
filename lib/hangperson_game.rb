@@ -38,7 +38,7 @@ class HangpersonGame
 		if (letter.nil? or !(letter =~ /^[[:alpha:]]$/))
 			raise ArgumentError	
 		end
-		letter.downcase
+		letter.downcase!
 		if @word.include? letter
 			if @guesses.include? letter
 				return false
