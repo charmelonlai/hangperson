@@ -54,7 +54,7 @@ class HangpersonGame
 	end
 
 	def check_win_or_lose
-		if wrong_guesses.length == 7
+		if wrong_guesses.length >= 7
 			return :lose
 		end
 		word.each_char do|x|
